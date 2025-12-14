@@ -9,11 +9,9 @@ class Worker
     return unless task
 
     puts "[INFO]: Working on #Task::#{task['id']}"
-
     self.execute(task)
 
     @queue.ack(task['id'])
-    puts "[SUCCESS]: Task::#{task['id']} is done"
   end
 
   private def execute(task)
