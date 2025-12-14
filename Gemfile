@@ -3,3 +3,4 @@
 source "https://rubygems.org"
 
 # gem "rails"
+gem 'redis', '~> 5.4', '>= 5.4.1'
